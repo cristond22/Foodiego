@@ -4,7 +4,7 @@ const Stripe = require('stripe');
 const stripe = Stripe(process.env.STRIPE_SECRET_KEY);
 const { processOrderFromCart } = require('../utils/orderUtils');
 const Order = require('../models/Order');
-/*
+
 // ✅ Stripe Webhook Handler Exported for use in server.js
 const webhookHandler = async (req, res) => {
   const sig = req.headers['stripe-signature'];
@@ -30,7 +30,7 @@ const webhookHandler = async (req, res) => {
       console.error("❌ Error creating order from webhook:", err.message);
     }
   }
-};*/
+};
 
 // ✅ Create Stripe Checkout Session
 router.post('/create-checkout-session', async (req, res) => {
