@@ -62,8 +62,8 @@ router.post('/create-checkout-session', async (req, res) => {
         ...shippingAddress
       },
       line_items,
-      success_url: 'http://localhost:3000/order-success',
-      cancel_url: 'http://localhost:3000/checkout',
+      success_url: 'https://foodiegofrontend-297beknsh-cristons-projects-feb49d41.vercel.app/order-success',
+      cancel_url: 'https://foodiegofrontend-297beknsh-cristons-projects-feb49d41.vercel.app/checkout',
     });
 
     res.json({ id: session.id });
