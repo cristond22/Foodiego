@@ -4,7 +4,7 @@ const authMiddleware = require('../middleware/auth');
 const { processOrderFromCart } = require('../utils/orderUtils');
 const Order = require('../models/Order'); 
 const router = express.Router();
-
+/*
 // ✅ Stripe Webhook Handler Exported for use in server.js
 const webhookHandler = async (req, res) => {
   const sig = req.headers['stripe-signature'];
@@ -32,7 +32,7 @@ const webhookHandler = async (req, res) => {
   }
 };
 
-// ✅ Crea
+*/
 
 router.get('/my-orders/:userId', async (req, res) => {
   try {
