@@ -14,7 +14,7 @@ admin.initializeApp({
 const messaging = admin.messaging();
 
 // Example FCM Token and message
-const registrationToken = 'YOUR_TEST_DEVICE_FCM_TOKEN';
+const registrationToken = 'cuqNXOffKHhnD9hGR0aCTM:APA91bFdzzCO3eidhX54oWU-LVkEIIULGWSCI1v0kvm_obLBxWzBV_9zzRlNoMqpl3XUBh6uxg3JkfORXYy09mPZPsDgb8BOOPvISXSXiC3ufaNCLm1f_KY';
 
 const message = {
   token: registrationToken,
