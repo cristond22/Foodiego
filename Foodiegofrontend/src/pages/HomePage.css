@@ -1,0 +1,144 @@
+.home-container {
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  text-align: center;
+}
+/* Top horizontal nav centered on top */
+.top-nav {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10; /* On top of everything */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  color: white;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.nav-link:hover {
+  background-color: rgba(255, 107, 107, 0.8);
+}
+
+/* Keep your current styles for .home-container, .header, .content, etc., unchanged */
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5); /* semi-transparent black */
+  z-index: 1;
+}
+
+.header {
+  position: relative;
+  z-index: 2;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  filter: drop-shadow(0 0 10px rgba(255,255,255,0.8));
+}
+
+.content {
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.content h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  animation: fadeInDown 1s ease-out;
+}
+
+.content p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  font-weight: 300;
+  animation: fadeInUp 1.2s ease-out;
+}
+
+.order-btn {
+  background: #ff6b6b;
+  border: none;
+  padding: 1rem 2.5rem;
+  border-radius: 30px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(255, 107, 107, 0.6);
+  transition: transform 0.3s ease, background 0.3s ease;
+  animation: fadeInUp 1.4s ease-out;
+}
+
+.order-btn:hover {
+  background: #ff4757;
+  transform: scale(1.05);
+}
+
+.footer {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  font-size: 0.95rem;
+  background: rgba(0,0,0,0.3);
+  color: #eee;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

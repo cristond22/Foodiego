@@ -1,0 +1,36 @@
+.add-food-container {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+}
+
+.add-food-container h2 {
+    margin-bottom: 15px;
+}
+
+.add-food-container input,
+.add-food-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.add-food-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-food-container button:hover {
+    background-color: #ff4500;
+}

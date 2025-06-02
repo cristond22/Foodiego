@@ -1,0 +1,163 @@
+/* Admin Container */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Admin Dashboard Header */
+.admin-header {
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+    width: 100%;
+    max-width: 900px;
+    border-radius: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Admin Navigation */
+.admin-nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.admin-nav button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.admin-nav button:hover {
+    background-color: #e64a19;
+}
+
+/* Admin Content Area */
+.admin-content {
+    background: #ffffff;
+    padding: 30px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    width: 100%;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* Food List Layout */
+.admin-food-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+/* Each Food Card */
+.admin-food-card {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    width: 260px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.admin-food-card:hover {
+    transform: scale(1.03);
+}
+
+/* Buttons in Cards */
+.admin-food-card button {
+    margin-top: 10px;
+    margin-right: 8px;
+    padding: 8px 15px;
+    font-size: 0.95rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.admin-food-card img {
+
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    margin-left: -20px;
+
+}
+/* Button Styles */
+.edit-btn {
+    background-color: #0288d1;
+    color: white;
+}
+
+.delete-btn {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.edit-btn:hover {
+    background-color: #0277bd;
+}
+
+.delete-btn:hover {
+    background-color: #c62828;
+}
+
+/* Form Fields - Compact, Clean */
+.edit-food-form,
+.add-food-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto 40px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 25px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+.edit-food-form input,
+.add-food-form input {
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+.edit-food-form button,
+.add-food-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+.edit-food-form button:hover,
+.add-food-form button:hover {
+    background-color: #388e3c;
+}

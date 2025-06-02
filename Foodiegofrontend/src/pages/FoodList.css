@@ -1,0 +1,181 @@
+/* FoodList Container */
+.food-list-container {
+   
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #150202;
+       
+
+  flex-direction: column;
+  justify-content: space-between;
+    color:#ffffff
+}
+
+/* Header Section */
+.App-header {
+    background-color: #ff7043;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.App-header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.App-header p {
+    font-size: 1.2rem;
+    margin-top: 5px;
+}
+
+/* Menu Title */
+h2 {
+    margin-top: 20px;
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+
+/* Food Container Grid */
+.food-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* Food Card */
+.food-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    padding: 15px;
+    width: 250px;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+}
+
+.food-card:hover {
+    transform: scale(1.05);
+}
+
+/* Food Image */
+.food-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+/* Food Name */
+.food-card h3 {
+    font-size: 1.4rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Food Description */
+.food-card p {
+    font-size: 1rem;
+    color: #666;
+}
+
+/* Food Price */
+.food-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ff7043;
+    margin: 10px 0;
+}
+
+/* Stock Information */
+.stock-text {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+.stock-text.out {
+    color: red;
+    font-weight: bold;
+}
+
+.stock-text.in {
+    color: green;
+    font-weight: bold;
+}
+
+/* Add to Cart Button */
+button {
+    background-color: #ff7043;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #e64a19;
+}
+
+button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+/* Cart Panel */
+.cart-panel {
+    position: fixed;
+    top: 0;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background: white;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s ease-in-out;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.cart-panel.visible {
+    right: 0;
+}
+
+.cart-toggle {
+    position: absolute;
+    left: -30px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #ff7043;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cart-toggle:hover {
+    background: #e64a19;
+}
+
+.complete-order {
+    background: #4caf50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.complete-order:hover {
+    background: #388e3c;
+}
