@@ -33,7 +33,23 @@ const webhookHandler = async (req, res) => {
 };
 
 */
+// Save offline order (requires user authentication)
+router.post('/offline', authMiddleware, async (req, res) => {
+  try {
+    const orderData = {
+      ...req.body,
+      userId: req.user.id,  // Attach userId from authenticated user
+    };
 
+    const newOrder = new Order(orderData);
+    await newOrder.save();
+
+    res.status(201).json({ message: 'Offline order saved successfully', order: newOrder });
+  } catch (err) {
+    console.error('❌ Error saving offline order:', err);
+    res.status(500).json({ error: 'Failed to save offline order' });
+  }
+});
 router.get('/my-orders/:userId', async (req, res) => {
   try {
     const rawOrders = await Order.find({ userId: req.params.userId });
